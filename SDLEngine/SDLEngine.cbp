@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="SDLEngine" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/SDLEngine" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="C:/Users/Anise/Desktop/SGD/SDL2/include" />
+					<Add directory="C:/Users/Anise/Desktop/SGD/SDL2_image/include" />
+					<Add directory="engine/core" />
+					<Add directory="Core" />
+					<Add directory="Grafika" />
+					<Add directory="Fizyka" />
+					<Add directory="Object" />
+					<Add directory="Characters" />
+					<Add directory="Animation" />
+				</Compiler>
+				<Linker>
+					<Add option="-lmingw32 -lSDL2main -lSDL2 -lSDL2_image" />
+					<Add directory="C:/Users/Anise/Desktop/SGD/SDL2/lib" />
+					<Add directory="C:/Users/Anise/Desktop/SGD/SDL2_image/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/SDLEngine" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="engine/core" />
+					<Add directory="Core" />
+					<Add directory="Grafika" />
+					<Add directory="Fizyka" />
+					<Add directory="Object" />
+					<Add directory="Characters" />
+					<Add directory="Animation" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="Animation/Animation.cpp" />
+		<Unit filename="Animation/Animation.h" />
+		<Unit filename="Characters/Character.h" />
+		<Unit filename="Characters/Player.cpp" />
+		<Unit filename="Characters/Player.h" />
+		<Unit filename="Core/Engine.cpp" />
+		<Unit filename="Core/Engine.h" />
+		<Unit filename="Fizyka/RigidBody.h" />
+		<Unit filename="Fizyka/Transform.h" />
+		<Unit filename="Fizyka/Vector2D.h" />
+		<Unit filename="Grafika/TextureManager.cpp" />
+		<Unit filename="Grafika/TextureManager.h" />
+		<Unit filename="Object/GameObject.h" />
+		<Unit filename="Object/IObject.h" />
+		<Unit filename="main.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
