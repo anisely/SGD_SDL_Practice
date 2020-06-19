@@ -1,6 +1,7 @@
 # depslib dependency file v1.0
-1592225267 source:c:\users\anise\desktop\sgd\sdlengine\main.cpp
+1592574334 source:c:\users\anise\desktop\sgd\sdlengine\main.cpp
 	"Engine.h"
+	"Timer.h"
 
 1583894369 c:\users\anise\desktop\sgd\sdl2\include\sdl2\sdl.h
 	"SDL_main.h"
@@ -409,7 +410,7 @@
 
 1592232091 c:\users\anise\desktop\sgd\sdlengine\object\iobject.h
 
-1592573197 source:c:\users\anise\desktop\sgd\sdlengine\characters\player.cpp
+1592573351 source:c:\users\anise\desktop\sgd\sdlengine\characters\player.cpp
 	"Player.h"
 	"TextureManager.h"
 	"SDL.h"
@@ -423,5 +424,11 @@
 	"Engine.h"
 
 1592570240 c:\users\anise\desktop\sgd\sdlengine\input\input.h
+	"SDL.h"
+
+1592574102 c:\users\anise\desktop\sgd\sdlengine\timer\timer.h
+
+1592574287 source:c:\users\anise\desktop\sgd\sdlengine\timer\timer.cpp
+	"Timer.h"
 	"SDL.h"
 
