@@ -1,5 +1,6 @@
 #include "TextureManager.h"
 #include "Engine.h"
+#include "Camera.h"
 
 TextureManager* TextureManager::s_Instance=nullptr;
 
@@ -25,13 +26,15 @@ bool TextureManager::Load(std::string id, std::string filename)
 void TextureManager::Draw(std::string id, int x, int y, int width, int height, SDL_RendererFlip flip)
 {
     SDL_Rect srcRect = {0,0,width, height};
-    SDL_Rect dstRect = {x,y,width, height};
+    Vector2D cam = Camera::GetInstance()->GetPosition()*0.5;
+    SDL_Rect dstRect = {x-cam.X,y-cam.Y,width, height};
     SDL_RenderCopyEx(Engine::GetInstance()->GetRenderer(),m_TextureMap[id], &srcRect, &dstRect, 0 , nullptr , flip);
 }
 void TextureManager::DrawFrame(std::string id, int x, int y, int width, int height,int row, int frame, SDL_RendererFlip flip)
 {
-    SDL_Rect srcRect = {width*frame,height*row,width, height};
-    SDL_Rect dstRect = {x,y,width, height};
+    SDL_Rect srcRect = {width*frame,height*(row-1),width, height};
+    Vector2D cam = Camera::GetInstance()->GetPosition();
+    SDL_Rect dstRect = {x-cam.X,y-cam.Y,width, height};
     SDL_RenderCopyEx(Engine::GetInstance()->GetRenderer(),m_TextureMap[id], &srcRect, &dstRect, 0 , nullptr , flip);
 }
 
@@ -50,4 +53,12 @@ void TextureManager::Clean()
     m_TextureMap.clear();
 
     SDL_Log("texture map DESTROYED");
+}
+
+void TextureManager::DrawTile(std::string tilesetID, int tileSize, int x, int y, int row, int frame, SDL_RendererFlip flip){
+    SDL_Rect srcRect = {tileSize*frame, tileSize*row, tileSize, tileSize};
+    Vector2D cam = Camera::GetInstance()->GetPosition();
+
+    SDL_Rect dstRect = {x-cam.X, y-cam.Y, tileSize, tileSize};
+    SDL_RenderCopyEx(Engine::GetInstance()->GetRenderer(), m_TextureMap[tilesetID], &srcRect, &dstRect, 0, 0, flip);
 }

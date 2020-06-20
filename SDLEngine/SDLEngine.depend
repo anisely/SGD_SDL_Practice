@@ -357,26 +357,31 @@
 	"begin_code.h"
 	"close_code.h"
 
-1592572829 source:c:\users\anise\desktop\sgd\sdlengine\core\engine.cpp
+1592688845 source:c:\users\anise\desktop\sgd\sdlengine\core\engine.cpp
 	"Engine.h"
-	<iostream>
 	"TextureManager.h"
-	"Transform.h"
 	"Input.h"
 	"Player.h"
+	"SDL.h"
+	"Timer.h"
+	"MapParser.h"
+	<iostream>
+	"Camera.h"
 
-1592226415 c:\users\anise\desktop\sgd\sdlengine\core\engine.h
+1592649319 c:\users\anise\desktop\sgd\sdlengine\core\engine.h
 	"SDL.h"
 	"SDL_image.h"
+	"GameMap.h"
 
-1592233115 c:\users\anise\desktop\sgd\sdlengine\grafika\texturemanager.h
+1592583551 c:\users\anise\desktop\sgd\sdlengine\grafika\texturemanager.h
 	<string>
 	"SDL.h"
 	<map>
 
-1592233198 source:c:\users\anise\desktop\sgd\sdlengine\grafika\texturemanager.cpp
+1592589844 source:c:\users\anise\desktop\sgd\sdlengine\grafika\texturemanager.cpp
 	"TextureManager.h"
 	"Engine.h"
+	"Camera.h"
 
 1592277899 c:\users\anise\desktop\sgd\sdlengine\fizyka\transform.h
 	"Vector2D.h"
@@ -392,29 +397,33 @@
 	<string>
 	"SDL.h"
 
-1592277829 c:\users\anise\desktop\sgd\sdlengine\characters\player.h
+1592684298 c:\users\anise\desktop\sgd\sdlengine\characters\player.h
 	"Character.h"
 	"Animation.h"
 	"RigidBody.h"
+	"Collider.h"
+	"Vector2D.h"
 
-1592236440 c:\users\anise\desktop\sgd\sdlengine\characters\character.h
+1580770343 c:\users\anise\desktop\sgd\sdlengine\characters\character.h
 	"GameObject.h"
 	<string>
-	"GameObject.h"
-	<string>
 
-1592236171 c:\users\anise\desktop\sgd\sdlengine\object\gameobject.h
+1592589074 c:\users\anise\desktop\sgd\sdlengine\object\gameobject.h
 	"IObject.h"
 	"Transform.h"
 	"SDL.h"
+	"Point.h"
 
 1592232091 c:\users\anise\desktop\sgd\sdlengine\object\iobject.h
 
-1592573351 source:c:\users\anise\desktop\sgd\sdlengine\characters\player.cpp
+1592687602 source:c:\users\anise\desktop\sgd\sdlengine\characters\player.cpp
 	"Player.h"
 	"TextureManager.h"
 	"SDL.h"
 	"Input.h"
+	"Engine.h"
+	"CollisionHandler.h"
+	"Camera.h"
 
 1592572120 c:\users\anise\desktop\sgd\sdlengine\fizyka\rigidbody.h
 	"Vector2D.h"
@@ -430,5 +439,99 @@
 
 1592574287 source:c:\users\anise\desktop\sgd\sdlengine\timer\timer.cpp
 	"Timer.h"
+	"SDL.h"
+
+1592585691 source:c:\users\anise\desktop\sgd\sdlengine\map\tilelayer.cpp
+	"TileLayer.h"
+	"TextureManager.h"
+
+1592579039 c:\users\anise\desktop\sgd\sdlengine\map\tilelayer.h
+	"Layer.h"
+	<string>
+	<vector>
+
+1592575139 c:\users\anise\desktop\sgd\sdlengine\map\layer.h
+
+1376507762 source:c:\users\anise\desktop\sgd\sdlengine\vendor\tinystr.cpp
+	"tinystr.h"
+
+1376507762 c:\users\anise\desktop\sgd\sdlengine\vendor\tinystr.h
+	<assert.h>
+	<string.h>
+
+1376507762 source:c:\users\anise\desktop\sgd\sdlengine\vendor\tinyxml.cpp
+	<ctype.h>
+	<sstream>
+	<iostream>
+	"tinyxml.h"
+
+1376507762 c:\users\anise\desktop\sgd\sdlengine\vendor\tinyxml.h
+	<ctype.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<string>
+	<iostream>
+	<sstream>
+	"tinystr.h"
+
+1376507762 source:c:\users\anise\desktop\sgd\sdlengine\vendor\tinyxmlerror.cpp
+	"tinyxml.h"
+
+1376507762 source:c:\users\anise\desktop\sgd\sdlengine\vendor\tinyxmlparser.cpp
+	<ctype.h>
+	<stddef.h>
+	"tinyxml.h"
+	<windows.h>
+
+1592688013 source:c:\users\anise\desktop\sgd\sdlengine\map\mapparser.cpp
+	"MapParser.h"
+
+1592584877 c:\users\anise\desktop\sgd\sdlengine\map\mapparser.h
+	<map>
+	<string>
+	"GameMap.h"
+	"tinyxml.h"
+	"TileLayer.h"
+
+1592582359 c:\users\anise\desktop\sgd\sdlengine\map\gamemap.h
+	"Layer.h"
+	<vector>
+
+1592586968 source:c:\users\anise\desktop\sgd\sdlengine\characters\warrior.cpp
+	"Warrior.h"
+	"TextureManager.h"
+	"SDL.h"
+	"Input.h"
+
+1581116316 c:\users\anise\desktop\sgd\sdlengine\characters\warrior.h
+	"Character.h"
+	"Animation.h"
+	"RigidBody.h"
+
+1592588853 c:\users\anise\desktop\sgd\sdlengine\fizyka\point.h
+	<iostream>
+
+1592588752 source:c:\users\anise\desktop\sgd\sdlengine\camera\camera.cpp
+	"Camera.h"
+
+1592588764 c:\users\anise\desktop\sgd\sdlengine\camera\camera.h
+	"SDL.h"
+	"Point.h"
+	"Engine.h"
+	"Vector2D.h"
+
+1592687971 source:c:\users\anise\desktop\sgd\sdlengine\kolizja\collisionhandler.cpp
+	"CollisionHandler.h"
+	"Engine.h"
+
+1592649509 c:\users\anise\desktop\sgd\sdlengine\kolizja\collisionhandler.h
+	"SDL.h"
+	<vector>
+	"TileLayer.h"
+	"GameMap.h"
+
+1592686974 c:\users\anise\desktop\sgd\sdlengine\fizyka\collider.h
 	"SDL.h"
 

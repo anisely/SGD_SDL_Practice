@@ -22,6 +22,11 @@
 					<Add directory="Object" />
 					<Add directory="Characters" />
 					<Add directory="Animation" />
+					<Add directory="Input" />
+					<Add directory="Timer" />
+					<Add directory="Map" />
+					<Add directory="Vendor" />
+					<Add directory="Camera" />
 				</Compiler>
 				<Linker>
 					<Add option="-lmingw32 -lSDL2main -lSDL2 -lSDL2_image" />
@@ -43,6 +48,10 @@
 					<Add directory="Object" />
 					<Add directory="Characters" />
 					<Add directory="Animation" />
+					<Add directory="Input" />
+					<Add directory="Timer" />
+					<Add directory="Map" />
+					<Add directory="Camera" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -55,18 +64,37 @@
 		</Compiler>
 		<Unit filename="Animation/Animation.cpp" />
 		<Unit filename="Animation/Animation.h" />
+		<Unit filename="Camera/Camera.cpp" />
+		<Unit filename="Camera/Camera.h" />
 		<Unit filename="Characters/Character.h" />
 		<Unit filename="Characters/Player.cpp" />
 		<Unit filename="Characters/Player.h" />
 		<Unit filename="Core/Engine.cpp" />
 		<Unit filename="Core/Engine.h" />
+		<Unit filename="Fizyka/Point.h" />
 		<Unit filename="Fizyka/RigidBody.h" />
 		<Unit filename="Fizyka/Transform.h" />
 		<Unit filename="Fizyka/Vector2D.h" />
 		<Unit filename="Grafika/TextureManager.cpp" />
 		<Unit filename="Grafika/TextureManager.h" />
+		<Unit filename="Input/Input.cpp" />
+		<Unit filename="Input/Input.h" />
+		<Unit filename="Map/GameMap.h" />
+		<Unit filename="Map/Layer.h" />
+		<Unit filename="Map/MapParser.cpp" />
+		<Unit filename="Map/MapParser.h" />
+		<Unit filename="Map/TileLayer.cpp" />
+		<Unit filename="Map/TileLayer.h" />
 		<Unit filename="Object/GameObject.h" />
 		<Unit filename="Object/IObject.h" />
+		<Unit filename="Timer/Timer.cpp" />
+		<Unit filename="Timer/Timer.h" />
+		<Unit filename="Vendor/tinystr.cpp" />
+		<Unit filename="Vendor/tinystr.h" />
+		<Unit filename="Vendor/tinyxml.cpp" />
+		<Unit filename="Vendor/tinyxml.h" />
+		<Unit filename="Vendor/tinyxmlerror.cpp" />
+		<Unit filename="Vendor/tinyxmlparser.cpp" />
 		<Unit filename="main.cpp" />
 		<Extensions />
 	</Project>
